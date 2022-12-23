@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    color: inherit;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    background: white;
+    padding: .4rem .2rem;
+
+}
+
+header {
+    width: 99.9%;
+    height: 200vh;
+    background: whitesmoke;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navigation {
+    width: 100%;
+    height: 2rem;
+    background: black;
+    padding: 1.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    opacity: 70%;
+    z-index: 1009;
+    box-shadow: 3px 3px 1px 2px #000;
+}
+
+.navigation .Logo h2 {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    letter-spacing: .1rem;
+    user-select: none;
+}
+
+.navigation .Logo h2 span {
+    color: #ff08a0;
+    user-select: none;
+}
+
+.navigation .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigation .menu ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+
+}
+
+.navigation .menu ul li a::after {
+    content: '';
+    width: 0%;
+    height: .1rem;
+    background: #ff08a0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.navigation .menu ul li a:hover:after {
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+/* =====================================================>>Carts*/
+
+.ContaienCarts {
+    position: absolute;
+    width: 90%;
+    height: 80vh;
+    background: transparent;
+    box-shadow: 1px 2px 4px 2px #ff08a0;
+    left: 5rem;
+    top: 5rem;
+    border-radius: .2rem;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ContaienCarts .CartOne {
+    background: rgba(128, 0, 255, 0.708);
+    border-radius: .3rem;
+    text-align: center;
+    padding: .3rem 1rem;
+    color: white;
+    font-size: .9rem;
+    font-weight: 400;
+    display: block;
+    justify-items: center;
+    transition: all 0.4s ease;
+}
+
+.ContaienCarts .CartOne:hover {
+    transition: all 0.4s ease;
+    background: #ff08a0;
+    color: white;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ContaienCarts .CartOne h3 {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2rem;
+    color:white;
+    transition: all 0.3s ease;
+}
+
+/* ============================================================> */
+.ContaienCartsone{
+    position: absolute;
+        width: 90%;
+        height: 80vh;
+        background: transparent;
+        box-shadow: 1px 2px 4px 2px #ff08a0;
+        left: 5rem;
+        top: 40rem;
+        border-radius: .2rem;
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+}
+
+.ContaienCartsone .CartOne {
+    background: rgba(128, 0, 255, 0.708);
+        border-radius: .3rem;
+        text-align: center;
+        padding: .3rem 1rem;
+        color: white;
+        font-size: .9rem;
+        font-weight: 400;
+        display: block;
+        justify-items: center;
+        transition: all 0.4s ease;
+}
